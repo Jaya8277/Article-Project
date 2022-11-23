@@ -206,7 +206,6 @@ mongoose.connect("mongodb+srv://Recovero:Recovero@cluster0.rafltqm.mongodb.net/?
 })
 
 app.listen(process.env.PORT || 3000,(req,res)=>{
-   
     console.log("server started successfully")
 })
 
