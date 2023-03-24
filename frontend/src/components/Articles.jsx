@@ -15,7 +15,7 @@ function Articles() {
 	//
 	const getdata = () => {
 		axios
-			.get("http://localhost:8080/blog", {
+			.get("https://article-backend-liard.vercel.app/blog", {
 				headers: {
 					Authorization: `bearer ${token}`,
 				},
@@ -42,7 +42,7 @@ function Articles() {
 
 	function deleteitem(id) {
 		axios
-			.delete(`http://localhost:8080/blogs/${id}`)
+			.delete(`https://article-backend-liard.vercel.app/blogs/${id}`)
 			.then((res) => {
 				console.log(res.data);
 				getdata();

@@ -49,7 +49,7 @@ export default function InitialFocus(props) {
 
 
 		axios
-			.put("http://localhost:8080/blog/update", obj)
+			.put("https://article-backend-liard.vercel.app/blog/update", obj)
 			.then((res) => {
 				console.log(res);
 				setTitle("");

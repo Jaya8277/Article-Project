@@ -47,7 +47,7 @@ export default function InitialFocus() {
 		};
 
 		axios
-			.post("http://localhost:8080/blog/create", obj, {
+			.post("https://article-backend-liard.vercel.app/blog/create", obj, {
 				headers: {
 					authorization: `bearer ${token}`,
 				},
