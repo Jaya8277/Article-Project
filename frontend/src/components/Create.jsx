@@ -47,7 +47,7 @@ export default function InitialFocus() {
 		};
 
 		axios
-			.post("https://recovero.herokuapp.com/blog/create", obj, {
+			.post("http://localhost:8080/blog/create", obj, {
 				headers: {
 					authorization: `bearer ${token}`,
 				},

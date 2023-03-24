@@ -31,7 +31,7 @@ export default function SignupCard() {
 			password,
 		};
 
-		axios.post("https://recovero.herokuapp.com/signup", obj).then((res) => {
+		axios.post("http://localhost:8080/signup", obj).then((res) => {
 			console.log(res);
 			navigate("/login");
 			alert("Account Created Successfully");

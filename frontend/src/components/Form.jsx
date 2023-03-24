@@ -23,7 +23,7 @@ export default function SimpleCard() {
 	//
 	function login(email, password) {
 		axios
-			.post("https://recovero.herokuapp.com/login", { email, password })
+			.post("http://localhost:8080/login", { email, password })
 			.then((res) => {
 				if (res.data.token) {
 					localStorage.setItem("token", res.data.token);

@@ -3,7 +3,7 @@ export const GETDATA="GETDATA"
 export const SENDDATA="SENDDATA"
 export const getdata=(payload,dispatch)=>{
     // console.log(payload);
-    axios.post("https://recovero.herokuapp.com/blog/bycategory",payload) 
+    axios.post("http://localhost:8080/blog/bycategory",payload) 
     .then(res=>{
         dispatch({
             type:GETDATA,

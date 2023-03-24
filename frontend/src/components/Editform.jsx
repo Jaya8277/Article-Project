@@ -49,7 +49,7 @@ export default function InitialFocus(props) {
 
 
 		axios
-			.put("https://recovero.herokuapp.com/blog/update", obj)
+			.put("http://localhost:8080/blog/update", obj)
 			.then((res) => {
 				console.log(res);
 				setTitle("");

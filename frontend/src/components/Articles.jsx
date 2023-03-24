@@ -15,7 +15,7 @@ function Articles() {
 	//
 	const getdata = () => {
 		axios
-			.get("https://recovero.herokuapp.com/blog", {
+			.get("http://localhost:8080/blog", {
 				headers: {
 					Authorization: `bearer ${token}`,
 				},
@@ -42,7 +42,7 @@ function Articles() {
 
 	function deleteitem(id) {
 		axios
-			.delete(`https://recovero.herokuapp.com/blogs/${id}`)
+			.delete(`http://localhost:8080/blogs/${id}`)
 			.then((res) => {
 				console.log(res.data);
 				getdata();
