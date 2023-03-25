@@ -1,5 +1,4 @@
 #Article-Project
 
-Deploy Link :- https://recovero-company-assignment.netlify.app
+Deploy Link :-https://article-project-backend.vercel.app/
 
-Note:- If fisrt time link is not work properly then refresh it once again then sign in and login.
